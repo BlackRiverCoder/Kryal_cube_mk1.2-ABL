@@ -1,6 +1,6 @@
 # Kryal_cube_mk1.2-ABL
 
-+ Today I am building ABL sensor to 3d printer Kryal Cube mk1.2
++ Today I am building ABL sensor to 3d printer Kryal Cube mk1.2 
 + In this solution we're using Z Endstop as calibration switch that means, we don't need Z Endstop anymore
 + Calibration will starts before every print
 + The disadvantage is that you must insert the sensor next to extruder and after calibration remove it
@@ -41,11 +41,38 @@
    ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/attached%20sensor.png)
 
 ***2.) Firmware configuration:***
- - If you have enabled these things, please disable them using # before every **define**:
+ > [!IMPORTANT]
+ > Marlin version - 2.0.9.2, in other versions settings can be different.
+ - If you have enabled any these settings, please disable them using // before every **#define**:
+ - **Configuration.h**
    ```
-   define PROBE_MANUALLY
+   #define PROBE_MANUALLY
    ```
-     
+   ```
+   #define AUTO_BED_LEVELING_3POINT
+   ```
+   ```
+   #define AUTO_BED_LEVELING_LINEAR
+   ```
+   ```
+   #define AUTO_BED_LEVELING_UBL
+   ```
+   ```
+   #define MESH_BED_LEVELING
+   ```
+   ```
+   #define RESTORE_LEVELING_AFTER_G28
+   ```
+   ```
+   #define ENABLE_LEVELING_AFTER_G28
+   ```
+
+ > [!CAUTION]
+ > If you don't disable these settings and try to build the code, you will get errors!
+
+   
+
+   
 
 ## Photos:
 
