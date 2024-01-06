@@ -179,7 +179,7 @@
  > You can avoid many problems!
 
  > [!CAUTION]
- > Flashing the firmware is the most dangerous part, so double-check everything! (Code, USB connection)
+ > Flashing the firmware is the most dangerous part, so double-check everything! (Code, USB connection).
  > While flashing, printer must be powered up!
 
  - 1.) **In VisualCode click build code, if the build is successful, you can write.**
@@ -223,7 +223,7 @@
  - 1.) **Make manual calibration of the bed corners and start the calibration once again.**
  > [!TIP]
  > You can enable Bed Tramming in Marlin, so the printer goes to every corner of the bed to infinity:
->        #define LEVEL_BED_CORNERS
+>#define LEVEL_BED_CORNERS
  - 2.) **Disable Multiple Probing**
    ```
    #define MULTIPLE_PROBING
