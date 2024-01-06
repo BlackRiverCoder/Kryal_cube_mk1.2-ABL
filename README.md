@@ -5,6 +5,13 @@
 + Calibration will starts before every print
 + The disadvantage is that you must insert the sensor next to extruder and after calibration remove it
 
+## Repository architecture:
+ - [**Manuals**](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#manuals-to-install-abl-on-kryal-cube-mk12)
+ - [**Models**](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#models)
+ - [**Troubleshooting**](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#troubleshooting)
+ - [**Sources**](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#sources)
+ - [**Troubleshooting Sources**](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#troubleshooting-sources)
+
 ## Manuals to install ABL on Kryal Cube mk1.2:
  
 **- 1.)** [English manual](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Manuals/English_manual.txt)
@@ -32,12 +39,12 @@
     - _Your holder should look like this one:_
     ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/sensor%20with%20holder%20installed.png)
 
- - 3.) **Connect cable to the main board:**
+ - 3.) **Connect cables to the main board:**
     - Pull the cable along 3d printer case, from extruder, where you make another (male type) connector, to the main board
     - Kryal Cube mk1.2 using AtMega2560 with RAMPS14, so connect the switch to this connector:
    ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/RAMPS14.png)
 
- - **Final calibration sensor attached next to the extruder:**
+ - **Final - calibration sensor attached next to the extruder:**
    ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/attached%20sensor.png)
 
 ***2.) Firmware configuration:***
@@ -75,8 +82,8 @@
         ```
         #define BABYSTEP_DISPLAY_TOTAL
         ```
-  > [!CAUTION]
-  > If you don't disable these settings and try to build the code, you can get errors!
+ > [!CAUTION]
+ > If you don't disable these settings and try to build the code, you can get errors!
 
  - 2.) **Enabling/configuring settings:**
     - Enable settings removing // before **#define**
@@ -121,7 +128,6 @@
           ```
           #define PROBING_MARGIN x
           ```
-          - !! Read troubleshooting !! - how many times calibration is performed
           ```
           - #define MULTIPLE_PROBING 2
           ```
@@ -167,10 +173,77 @@
         #define DEFAULT_STEPPER_DEACTIVE_TIME 400
         ```
       
-          
-          
-          
-          
+***3.) Building and flashing the firmware:***
+ > [!WARNING]
+ > If you used Z Probe setting, please on 3d printer's display under "Configuration", "Restore Setting" and than "Store settings"!
+ > You can avoid many problems!
 
+ > [!CAUTION]
+ > Flashing the firmware is the most dangerous part, so double-check everything! (Code, USB connection)
+ > While flashing, printer must be powered up!
 
-## Photos:
+ - 1.) **In VisualCode click build code, if the build is successful, you can write.**
+
+ > [!NOTE]
+ > On this printer with AtMega2560 you don't need bootloader, so flash with smile :)
+ - 2.) **Now click flash.**
+ - 3.) **If the flash was successful, restart the printer.**
+ - 4.) **After printer starts up, go to "Configuration", "Restore Setting" and than "Store Settings", with these you store new settings to EEPROM**
+
+***4.) Modify start GCode:***
+ > [!TIP]
+ > Use G28 X Y and G28 Z separately, instead of G28 (More info in [troubleshooting](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#troubleshooting)).
+
+ - Commands M140, M190, M104 and M109 can be different from slicer you're using. (I am using PrusaSlicer)
+
+ ```
+ M0 Install Sensor ; Printer will wait until you install the sensor to the printer
+
+ G28 X Y ; Home X Y
+ G28 Z ; Home Z
+
+ M140 S[first_layer_bed_temperature] ; Set bed temperature
+ M190 S[first_layer_bed_temperature] ; Wait for bed temperature
+
+ G29 ; Calibration
+
+ M0 ; Printer will wait until you remove the sensor from printer
+ ```
+ > [!TIP]
+ > Set nozzle temperature after calibration.
+
+ ```
+ M104 S[first_layer_temperature] T0; Set nozzle temperature
+ M109 S[first_layer_temperature] T0; Wait for nozzle temperature
+ ```
+
+## Troubleshooting:
+
+***M112 Printer Halted - Probing Failed:***
+ - 1.) **Make manual calibration of the bed corners and start the calibration once again.**
+ > [!TIP]
+ > You can enable Bed Tramming in Marlin, so the printer goes to every corner of the bed to infinity:
+ > #define LEVEL_BED_CORNERS
+ - 2.) **Disable Multiple Probing**
+   ```
+   #define MULTIPLE_PROBING
+   ```
+
+***When the bed is too low, homing cannot be performed:***
+ - **Use G28 X Y and G28 Z separately, instead of G28**
+
+## Sources:
+- https://www.youtube.com/watch?v=HJV82NHOY-0&
+- https://www.youtube.com/watch?v=NTvjIOFMs6M
+
+## Troubleshooting sources
+- https://www.youtube.com/watch?v=t4tNSk1_Sc8
+- https://www.reddit.com/r/ender3v2/comments/uq3aq3/bed_not_pressing_limit_switch_when_auto_homing/
+- https://forum.drucktipps3d.de/forum/thread/14381-probe-failed-with-g29-after-initial-installation/
+- https://www.3dprintgorilla.com/marlin-firmware-m112-shutdown/
+- https://github.com/MarlinFirmware/Marlin/issues/21118
+- https://www.reddit.com/r/3Dprinting/comments/ubwuvu/getting_mad_with_bed_size_and_margins_in_marlin/
+- https://github.com/MarlinFirmware/Marlin/issues/18033
+- https://www.reddit.com/r/ender3v2/comments/mtfxj3/firmware_crash_error_probing_failed/
+- https://www.reddit.com/r/ender3/comments/nc2ul2/bltouch_probe_doesnt_touch_bed_on_first_point/
+- https://www.reddit.com/r/3Dprinting/comments/g5a4mz/bltouch_not_probing_bed_g29_but_z_homing_works/
