@@ -45,7 +45,7 @@
  > Marlin version - 2.0.9.2, in other versions settings can be different.
  - 1.) **Disabling settings:**
   - If you have enabled any these settings, please disable them using // before every **#define**:
-   - **Configuration.h**
+    - **Configuration.h**
      ```
      #define PROBE_MANUALLY
      ```
@@ -70,7 +70,7 @@
      ```
      #define LCD_BED_LEVELING
      ```
-   - **Configuration_adv-h**
+    - **Configuration_adv-h**
      ```
      #define BABYSTEP_DISPLAY_TOTAL
      ```
