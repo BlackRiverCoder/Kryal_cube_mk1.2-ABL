@@ -36,6 +36,15 @@
     - Pull the cable along 3d printer case, from extruder, where you make another (male type) connector, to the main board
     - Kryal Cube mk1.2 using AtMega2560 with RAMPS14, so connect the switch to this connector:
    ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/RAMPS14.png)
+
+ - **Final calibration sensor attached next to the extruder:**
+   ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/attached%20sensor.png)
+
+***2.) Firmware configuration:***
+ - If you have enabled these things, please disable them using # before every **define**:
+   ```
+   define PROBE_MANUALLY
+   ```
      
 
 ## Photos:
