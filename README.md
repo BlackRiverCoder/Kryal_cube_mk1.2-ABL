@@ -82,7 +82,7 @@
         ```
         #define BABYSTEP_DISPLAY_TOTAL
         ```
- > [!CAUTION]
+ > [!WARNING]
  > If you don't disable these settings and try to build the code, you can get errors!
 
  - 2.) **Enabling/configuring settings:**
