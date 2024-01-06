@@ -70,6 +70,7 @@
         ```
         #define LCD_BED_LEVELING
         ```
+        
       - **Configuration_adv-h**
         ```
         #define BABYSTEP_DISPLAY_TOTAL
@@ -80,8 +81,7 @@
  - 2.) **Enabling/configuring settings:**
     - Enable settings removing // before **#define**
       - **Configuration.h**
-        > [!WARNING]
-        - Set dimensions where the nozzle is safely on the bed, these settings can be found [here]()
+        - !! Set dimensions where the nozzle is safely on the bed and bed sizes, these settings can be found [here]() !!
         - EEPROM settings:
           ```
           #define EEPROM_SETTINGS
@@ -89,7 +89,7 @@
           ```
           #define EEPROM_AUTO_INIT
           ```
-        - Safe homing:
+        - Z Safe homing:
           ```
           #define Z_SAFE_HOMING
           ```
@@ -99,6 +99,78 @@
           ```
           #define Z_AFTER_HOMING   10
           ```
+        - ABL:
+          - -left +right; -front +back; -down (our solution only has down); these settings can be found [here]()
+          ```
+          #define NOZZLE_TO_PROBE_OFFSET { -32, -15, -7 }
+          ```
+          ```
+          #define AUTO_BED_LEVELING_BILINEAR
+          ```
+          ```
+          #define FIX_MOUNTED_PROBE
+          ```
+          ```
+          #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+          ```
+          - x*x = number of calibrating points
+          ```
+          #define GRID_MAX_POINTS_X x
+          ```
+          - x = this setting can be found [here]()
+          ```
+          #define PROBING_MARGIN x
+          ```
+          - !! Read troubleshooting !! - how many times calibration is performed
+          ```
+          - #define MULTIPLE_PROBING 2
+          ```
+          - higher speed = more inaccurate calibration
+          ```
+          #define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 3)
+          ```
+          ```
+          #define Z_CLEARANCE_DEPLOY_PROBE   10
+          ```
+          ```
+          #define Z_CLEARANCE_BETWEEN_PROBES 10
+          ```
+          ```
+          #define Z_CLEARANCE_MULTI_PROBE     3
+          ```
+          ```
+          #define Z_AFTER_PROBING            20
+          ```
+          ```       
+          #define Z_PROBE_LOW_POINT          -5
+          ```
+
+      - **Configuration_adv.h**
+        ```
+        #define BABYSTEPPING
+        ```
+        ```
+        #define DOUBLECLICK_FOR_Z_BABYSTEPPING
+        ```
+        ```
+        #define BABYSTEP_ZPROBE_OFFSET
+        ```
+        - This is XYcore 3d printer, so BABYSTEP Grafic Overlay is flipped (Symbol up = bed down; Symbol down = bed up)
+        ```
+        #define BABYSTEP_ZPROBE_GFX_OVERLAY
+        ```
+        - When trying to calibrate, on the last line the extruder head was rubbing against the back of the 3d printer frame, so I'm setting the limit from the back side
+        ```
+        #define PROBING_MARGIN_BACK PROBING_MARGIN +15
+        ```
+        ```
+        #define DEFAULT_STEPPER_DEACTIVE_TIME 400
+        ```
+      
+          
+          
+          
+          
 
 
 ## Photos:
