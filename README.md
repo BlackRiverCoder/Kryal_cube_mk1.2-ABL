@@ -80,7 +80,7 @@
  - 2.) **Enabling/configuring settings:**
     - Enable settings removing // before **#define**
       - **Configuration.h**
-      > [!WARNING]
+        > [!WARNING]
         - Set dimensions where the nozzle is safely on the bed, these settings can be found [here]()
         - EEPROM settings:
           ```
