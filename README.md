@@ -28,7 +28,7 @@
     - 1.) Solder wires to the NC Switch and at the end of the cable make connector of your choice (as you can see in the red circle)
     - 2.) With the screws attach the switch to the 3d printed model
     - _Your holder should look like this one:_
-![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/sensor%20with%20holder%20installed.png)
+    ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/sensor%20with%20holder%20installed.png)
 
  - 3.) **Connect cable to the main board:**
     - aaa
