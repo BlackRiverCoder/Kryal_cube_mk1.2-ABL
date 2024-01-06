@@ -44,61 +44,61 @@
  > [!IMPORTANT]
  > Marlin version - 2.0.9.2, in other versions settings can be different.
  - 1.) **Disabling settings:**
-  - If you have enabled any these settings, please disable them using // before every **#define**:
-    - **Configuration.h**
-     ```
-     #define PROBE_MANUALLY
-     ```
-     ```
-     #define AUTO_BED_LEVELING_3POINT
-     ```
-     ```
-     #define AUTO_BED_LEVELING_LINEAR
-     ```
-     ```
-     #define AUTO_BED_LEVELING_UBL
-     ```
-     ```
-     #define MESH_BED_LEVELING
-     ```
-     ```
-      #define RESTORE_LEVELING_AFTER_G28
-     ```
-     ```
-     #define ENABLE_LEVELING_AFTER_G28
-     ```
-     ```
-     #define LCD_BED_LEVELING
-     ```
-    - **Configuration_adv-h**
-      ```
-      #define BABYSTEP_DISPLAY_TOTAL
-      ```
+    - If you have enabled any these settings, please disable them using // before every **#define**:
+      - **Configuration.h**
+        ```
+        #define PROBE_MANUALLY
+        ```
+        ```
+        #define AUTO_BED_LEVELING_3POINT
+        ```
+        ```
+        #define AUTO_BED_LEVELING_LINEAR
+        ```
+        ```
+        #define AUTO_BED_LEVELING_UBL
+        ```
+        ```
+        #define MESH_BED_LEVELING
+        ```
+        ```
+        #define RESTORE_LEVELING_AFTER_G28
+        ```
+        ```
+        #define ENABLE_LEVELING_AFTER_G28
+        ```
+        ```
+        #define LCD_BED_LEVELING
+        ```
+      - **Configuration_adv-h**
+        ```
+        #define BABYSTEP_DISPLAY_TOTAL
+        ```
   > [!CAUTION]
   > If you don't disable these settings and try to build the code, you can get errors!
 
  - 2.) **Enabling/configuring settings:**
-    - **Configuration.h**
-      - Set dimensions where the nozzle is safely on the bed, these settings can be found [here]()
-   > [!WARNING]
-   > For correct working, we need to configure bed area settings!
-      - EEPROM settings:
-      ```
-      #define EEPROM_SETTINGS
-      ```
-      ```
-      #define EEPROM_AUTO_INIT
-      ```
-      - Safe homing:
-      ```
-      
-
-   
-
-   
+    - Enable settings removing // before **#define**
+      - **Configuration.h**
+  > [!WARNING]
+  > For correct working, we need to configure bed area settings!
+        - Set dimensions where the nozzle is safely on the bed, these settings can be found [here]()
+        - EEPROM settings:
+          ```
+          #define EEPROM_SETTINGS
+          ```
+          ```
+          #define EEPROM_AUTO_INIT
+          ```
+        - Safe homing:
+          ```
+          #define Z_SAFE_HOMING
+          ```
+          ```
+          #define Z_HOMING_HEIGHT  20
+          ```
+          ```
+          #define Z_AFTER_HOMING   10
+          ```
 
 ## Photos:
-
-   
-
-
