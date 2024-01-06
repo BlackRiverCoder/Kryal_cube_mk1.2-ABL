@@ -223,7 +223,7 @@
  - 1.) **Make manual calibration of the bed corners and start the calibration once again.**
  > [!TIP]
  > You can enable Bed Tramming in Marlin, so the printer goes to every corner of the bed to infinity:
- > #define LEVEL_BED_CORNERS
+> #define LEVEL_BED_CORNERS
  - 2.) **Disable Multiple Probing**
    ```
    #define MULTIPLE_PROBING
