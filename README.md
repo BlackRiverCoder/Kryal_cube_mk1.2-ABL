@@ -3,7 +3,7 @@
 + Today I am building ABL sensor to 3d printer Kryal Cube mk1.2 
 + In this solution we're using Z Endstop as calibration switch that means, we don't need Z Endstop anymore
 + Calibration will starts before every print
-+ The disadvantage is that you must insert the sensor next to extruder and after calibration remove it
++ The disadvantage is that you must install the sensor next to the extruder and after calibration remove it
 
 ## Repository architecture:
  - [**Manuals**](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#manuals-to-install-abl-on-kryal-cube-mk12)
@@ -44,7 +44,7 @@
     - Kryal Cube mk1.2 using AtMega2560 with RAMPS14, so connect the switch to this connector:
    ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/RAMPS14.png)
 
- - **Final - calibration sensor attached next to the extruder:**
+ - **Final - calibration sensor installed next to the extruder:**
    ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/attached%20sensor.png)
 
 ***2.) Firmware configuration:***
