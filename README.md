@@ -16,7 +16,11 @@
 ## English Manual:
 
 **1.) Hardware preparation:**
-        HSHSH
+ - Things we need:
+    - NC Switch
+    - Cables
+    - Switch holder (according to the side on which the switch will be and according to the extruder type) download models [here](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models)
+    - Some connectors
   
 
 ## Photos:
