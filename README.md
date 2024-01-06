@@ -71,9 +71,9 @@
      #define LCD_BED_LEVELING
      ```
     - **Configuration_adv-h**
-     ```
-     #define BABYSTEP_DISPLAY_TOTAL
-     ```
+      ```
+      #define BABYSTEP_DISPLAY_TOTAL
+      ```
   > [!CAUTION]
   > If you don't disable these settings and try to build the code, you can get errors!
 
