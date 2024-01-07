@@ -223,7 +223,7 @@
  - 1.) **Veci, ktoré budeme potrebovať:**
     - NC Spínač
     - Káble
-    - Držiak spínača (podľa strany, kde spínač bude a podľa typu extrudera) si môžeš sitahnuť modely [tu](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models) a pozrieť si každý model s obrázkami [tu](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#models)
+    - Držiak spínača (podľa strany, kde spínač bude a podľa typu extrudera) si môžeš stiahnuť modely [tu](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models) a pozrieť si každý model s obrázkami [tu](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#models)
     - Konektory
     - Šrubky na prichitenie spínača na držiak
 
