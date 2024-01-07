@@ -16,7 +16,7 @@
  
 **- 1.)** [English manual](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL?tab=readme-ov-file#english-manual)
 
-**- 2.)** [Slovak Manual](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Manuals/Slovak_manual.txt)
+**- 2.)** [Slovak Manual](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL?tab=readme-ov-file#slovak-manual)
 
 ## Models:
 
