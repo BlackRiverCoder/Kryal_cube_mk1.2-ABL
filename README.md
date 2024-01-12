@@ -20,6 +20,8 @@
 
 ## Models:
 
+  - Formats: **.stl** and for SolidWorks **.sldprt**
+
 + **Right side model with original extruder: ([ModelR-O v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelR-O%20v1.0))**
 ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/ModelR-O%20v1.0.png)
 
