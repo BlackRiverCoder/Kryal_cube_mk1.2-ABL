@@ -6,7 +6,7 @@
 + The disadvantage is that you must install the sensor next to the extruder and after calibration remove it
 
 ## Repository architecture:
- - [**Manuals**](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#manuals-to-install-abl-on-kryal-cube-mk12)
+ - [**Manuals**](#manuals-to-install-abl-on-kryal-cube-mk12)
  - [**Models**](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#models)
  - [**Troubleshooting**](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#troubleshooting)
  - [**Sources**](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main?tab=readme-ov-file#sources)
