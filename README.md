@@ -435,6 +435,11 @@
   ```
   #define NOZZLE_TO_PROBE_OFFSET { -36, -10, -13 }
   ```
+ > [!TIP]
+ > For E3D extrder you can change this setting in **Configuration_adv.h** to +10:
+  ```
+  #define PROBING_MARGIN_BACK PROBING_MARGIN +10
+  ```
 
 ## Troubleshooting:
 
