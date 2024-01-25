@@ -29,6 +29,9 @@
 + **Left side model with original extruder: ([ModelL-O v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelL-O%20v1.0))**
 ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/ModelL-O%20v1.0.png)
 
++ **Left side model with E3D extruder: ([ModelL-E3D v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelL-E3D%20v1.0))**
+![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/ModelL-E3D%20v1.0.png)
+
 ## English Manual:
 
 ***1.) Hardware preparation:***
