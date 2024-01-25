@@ -8,6 +8,7 @@
 ## Repository architecture:
  - [**Manuals**](#manuals-to-install-abl-on-kryal-cube-mk12)
  - [**Models**](#models)
+ - [**Nozzle_to_probe_offset**](#nozzle_to_probe_offset)
  - [**Troubleshooting**](#troubleshooting)
  - [**Sources**](#sources)
  - [**Troubleshooting Sources**](#troubleshooting-sources)
@@ -106,13 +107,13 @@
           #define Z_SAFE_HOMING
           ```
           ```
-          #define Z_HOMING_HEIGHT  20
+          #define Z_HOMING_HEIGHT  30
           ```
           ```
-          #define Z_AFTER_HOMING   10
+          #define Z_AFTER_HOMING   20
           ```
         - ABL:
-          - -left +right; -front +back; -down (our solution only has down); these settings can be found [here]()
+          - -left +right; -front +back; -down (our solution only has down); these settings can be found [here](#nozzle_to_probe_offset)
           ```
           #define NOZZLE_TO_PROBE_OFFSET { -32, -15, -7 }
           ```
@@ -150,7 +151,7 @@
           #define Z_CLEARANCE_MULTI_PROBE     3
           ```
           ```
-          #define Z_AFTER_PROBING            20
+          #define Z_AFTER_PROBING            30
           ```
           ```       
           #define Z_PROBE_LOW_POINT          -5
@@ -287,7 +288,7 @@
  - 2.) **Povoľovanie/konfigurácia nastavení:**
     - Nastavenia povolíš vymazaním // pred každým **#define**
       - **Configuration.h**
-        - !! Nastav veľkosti, kde je trysk bezpečne nad podložkou a veľkosť podložky, tieto nastavenia nájdeš [tu]() !!
+        - !! Nastav veľkosti, kde je tryska bezpečne nad podložkou a veľkosť podložky, tieto nastavenia nájdeš [tu]() !!
         - EEPROM nastavenia:
           ```
           #define EEPROM_SETTINGS
@@ -300,13 +301,13 @@
           #define Z_SAFE_HOMING
           ```
           ```
-          #define Z_HOMING_HEIGHT  20
+          #define Z_HOMING_HEIGHT  30
           ```
           ```
-          #define Z_AFTER_HOMING   10
+          #define Z_AFTER_HOMING   20
           ```
         - ABL:
-          - -vľavo +vpravo; -dopredu +dozadu; -dole (naše riešenie bude mať hodnotu len -dole, nie hore); tieto nastavenia nájdeš [tu]()
+          - -vľavo +vpravo; -dopredu +dozadu; -dole (naše riešenie bude mať hodnotu len -dole, nie hore); tieto nastavenia nájdeš [tu](#nozzle_to_probe_offset)
           ```
           #define NOZZLE_TO_PROBE_OFFSET { -32, -15, -7 }
           ```
@@ -344,7 +345,7 @@
           #define Z_CLEARANCE_MULTI_PROBE     3
           ```
           ```
-          #define Z_AFTER_PROBING            20
+          #define Z_AFTER_PROBING            30
           ```
           ```       
           #define Z_PROBE_LOW_POINT          -5
@@ -415,6 +416,25 @@
  M104 S[first_layer_temperature] T0; Nastav teplotu trysky
  M109 S[first_layer_temperature] T0; počkaj na teplotu trysky
  ```
+
+## Nozzle_to_probe_offset:
+**[ModelL-O v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelL-O%20v1.0) with original (old) extruder:**
+ - -left +right; -front +back; -down (our solution only has down);
+  - Switch is 32mm left from the nozzle, so the first value will be **-32**
+  - Switch is 15mm back from the nozzle, so the second value will be **-15**
+  - Switch is 7mm under the nozzle, so the third value will be **-7**
+  ```
+  #define NOZZLE_TO_PROBE_OFFSET { -32, -15, -7 }
+  ```
+
+**[ModelL-E3D v1.0]() with E3D extruder:**
+ - -left +right; -front +back; -down (our solution only has down);
+  - Switch is 36mm left from the nozzle, so the first value will be **-36**
+  - Switch is 10mm back from the nozzle, so the second value will be **-10**
+  - Switch is 13mm under from the nozzle, so the third value will be **-13**
+  ```
+  #define NOZZLE_TO_PROBE_OFFSET { -36, -10, -13 }
+  ```
 
 ## Troubleshooting:
 
