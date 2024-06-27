@@ -2,7 +2,7 @@
 
 + Today I am building ABL sensor to 3d printer Kryal Cube mk1.2 
 + In this solution we're using Z Endstop as calibration switch that means, we don't need Z Endstop anymore
-+ Calibration will starts before every print
++ Calibration will start before every print
 + The disadvantage is that you must install the sensor next to the extruder and after calibration remove it
 
 ## Repository architecture:
