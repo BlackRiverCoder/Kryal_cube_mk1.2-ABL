@@ -247,10 +247,18 @@
     - Magnety 6x3mm (pre magnetický typ ABL)
 
  - 2.) **Skladanie držiaku snímača:**
+    **Pevný typ:**
     - 1.) Prispájkovať káble na C a NC na spínači a na konci kábla urobiť konektor tvojej voľby (viď. červený kruh (female type))
     - 2.) Pomocou šrubiek pripevniť spínač na 3d vytlačený držiak
     - _Malo by to vyzerať nejako takto:_
     ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/sensor%20with%20holder%20installed.png)
+
+    **Magnetický typ:**
+    > [!ATTENTION]
+    > Dvakrát skontroluj otočenie magnetov, ak sa dajú opačne, neprichytia sa o seba
+    - 1.) Vlož magnety do obidvoch modelov
+    - 2.) Pripevni microspínač do držiaka microspínača a upevni ho šrubami
+    - 3.) Pripevni káble do hlavného modelu
 
   - 3.) **Pripojenie káblov k základnej doske:**
      - Natiahni káble pozdĺž rámu 3d tlačiarne, od extrudera, kde urobíš opačný konektor pre kábel (male type) k základnej doske
