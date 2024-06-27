@@ -51,11 +51,11 @@
     ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/sensor%20with%20holder%20installed.png)
 
     **Magnet type:**
-  > [!CAUTION]
-  > Double check the magnet faces, if you don't put them in correct way, they won't snap together 
-  - 1.) Insert magnets to both models
-  - 2.) Attach the microswitch to the microswitch holder and put screws to hold it
-  - 3.) Attach cables to the main holder
+   > [!CAUTION]
+   > Double check the magnet faces, if you don't put them in correct way, they won't snap together 
+   - 1.) Insert magnets to both models
+   - 2.) Attach the microswitch to the microswitch holder and put screws to hold it
+   - 3.) Attach cables to the main holder
 
  - 3.) **Connect cables to the main board:**
     - Pull the cable along 3d printer case, from extruder, where you make another (male type) connector, to the main board
