@@ -51,8 +51,8 @@
     ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/sensor%20with%20holder%20installed.png)
 
     **Magnet type:**
-    > [!CAUTION]
-    > Double check the magnet faces, if you don't put them in correct way, they won't snap together 
+> [!CAUTION]
+> Double check the magnet faces, if you don't put them in correct way, they won't snap together 
     - 1.) Insert magnets to both models
     - 2.) Attach the microswitch to the microswitch holder and put screws to hold it
     - 3.) Attach cables to the main holder
@@ -254,8 +254,8 @@
     ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/sensor%20with%20holder%20installed.png)
 
     **Magnetický typ:**
-    > [!CAUTION]
-    > Dvakrát skontroluj otočenie magnetov, ak sa dajú opačne, neprichytia sa o seba
+> [!CAUTION]
+> Dvakrát skontroluj otočenie magnetov, ak sa dajú opačne, neprichytia sa o seba
     - 1.) Vlož magnety do obidvoch modelov
     - 2.) Pripevni microspínač do držiaka microspínača a upevni ho šrubami
     - 3.) Pripevni káble do hlavného modelu
