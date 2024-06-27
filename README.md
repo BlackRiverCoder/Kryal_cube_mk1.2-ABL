@@ -41,12 +41,21 @@
     - Switch holder (according to the side on which the switch will be and according to the extruder type) you can download models [here](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models) and every model types and images are [here](#models)
     - Some connectors
     - Screws to attach the switch to the holder
+    - Magnets 6x3mm (for magnet type ABL)
 
  - 2.) **Assembling the holder:**
+    **Fixed type:**
     - 1.) Solder wires to the C and NC on the switch and at the end of the cable make connector of your choice (as you can see in the red circle (female type))
     - 2.) With the screws attach the switch to the 3d printed model
     - _Your holder should look like this one:_
     ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/sensor%20with%20holder%20installed.png)
+
+    **Magnet type:**
+    > [!ATTENTION]
+    > Double check the magnet faces, if you don't put them in correct way, they won't snap together 
+    - 1.) Insert magnets to both models
+    - 2.) Attach the microswitch to the microswitch holder and put screws to hold it
+    - 3.) Attach cables to the main holder
 
  - 3.) **Connect cables to the main board:**
     - Pull the cable along 3d printer case, from extruder, where you make another (male type) connector, to the main board
@@ -235,6 +244,7 @@
     - Držiak spínača (podľa strany, kde spínač bude a podľa typu extrudera) si môžeš stiahnuť modely [tu](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models) a pozrieť si každý model s obrázkami [tu](#models)
     - Konektory
     - Šrubky na prichitenie spínača na držiak
+    - Magnety 6x3mm (pre magnetický typ ABL)
 
  - 2.) **Skladanie držiaku snímača:**
     - 1.) Prispájkovať káble na C a NC na spínači a na konci kábla urobiť konektor tvojej voľby (viď. červený kruh (female type))
