@@ -23,14 +23,17 @@
 
   - Formats: **.stl** and for SolidWorks **.sldprt**
 
-+ **Right side model with original extruder: ([ModelR-O v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelR-O%20v1.0))**
++ **Right side model used with original extruder: ([ModelR-O v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelR-O%20v1.0))**
 ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/ModelR-O%20v1.0.png)
 
-+ **Left side model with original extruder: ([ModelL-O v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelL-O%20v1.0))**
++ **Left side model used with original extruder: ([ModelL-O v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelL-O%20v1.0))**
 ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/ModelL-O%20v1.0.png)
 
-+ **Left side model with E3D extruder: ([ModelL-E3D v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelL-E3D%20v1.0))**
++ **Left side model used with E3D extruder: ([ModelL-E3D v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelL-E3D%20v1.0))**
 ![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/ModelL-E3D%20v1.0.png)
+
++ **Magnetic models used with E3D extruder: ([ModelM-E3D v1.0](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/tree/main/Assests/Models/ModelM-E3D%20v1.0))**
+![](https://github.com/BlackRiverCoder/Kryal_cube_mk1.2-ABL/blob/main/Assests/Images/ModelM-E3D%20v1.0.png)
 
 ## English Manual:
 
