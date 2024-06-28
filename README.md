@@ -107,7 +107,7 @@
  - 2.) **Enabling/configuring settings:**
     - Enable settings removing // before **#define**
       - **Configuration.h**
-        - !! Set dimensions where the nozzle is safely on the bed and bed sizes, these settings can be found [here]() !!
+        - !! Set dimensions where the nozzle is safely on the bed and bed sizes !!
         - EEPROM settings:
           ```
           #define EEPROM_SETTINGS
@@ -308,7 +308,7 @@
  - 2.) **Povoľovanie/konfigurácia nastavení:**
     - Nastavenia povolíš vymazaním // pred každým **#define**
       - **Configuration.h**
-        - !! Nastav veľkosti, kde je tryska bezpečne nad podložkou a veľkosť podložky, tieto nastavenia nájdeš [tu]() !!
+        - !! Nastav veľkosti, kde je tryska bezpečne nad podložkou a veľkosť podložky !!
         - EEPROM nastavenia:
           ```
           #define EEPROM_SETTINGS
