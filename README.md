@@ -210,30 +210,36 @@
  - 4.) **After printer starts up, go to "Configuration", "Restore Setting" and than "Store Settings", with these you store new settings to EEPROM**
 
 ***4.) Modify start GCode:***
- > [!TIP]
- > Use G28 X Y and G28 Z separately, instead of G28 (More info in [troubleshooting](#troubleshooting)).
-
- - Commands M140, M190, M104 and M109 can be different from slicer you're using. (I am using PrusaSlicer)
-
+ + **PrusaSlicer:**
  ```
- M0 Install Sensor ; Printer will wait until you install the sensor to the printer
-
- G28 X Y ; Home X Y
- G28 Z ; Home Z
+ M0 Install probe ; Printer will wait until you install probe to the printer
 
  M140 S[first_layer_bed_temperature] ; Set bed temperature
  M190 S[first_layer_bed_temperature] ; Wait for bed temperature
 
+ G28 ; Home all
  G29 ; Calibration
 
- M0 Remove Senzor ; Printer will wait until you remove the sensor from printer
- ```
- > [!TIP]
- > Set nozzle temperature after calibration.
+ M0 Remove probe ; Printer will wait until you remove probe from printer
 
- ```
  M104 S[first_layer_temperature] T0; Set nozzle temperature
  M109 S[first_layer_temperature] T0; Wait for nozzle temperature
+ ```
+
+ + **Orca Slicer:**
+ ```
+ M0 Install probe ; Printer will wait until you install probe to the printer
+
+ M140 S[hot_plate_temp_initial_layer] ; Set bed temp
+ M190 S[hot_plate_temp_initial_layer] ; Wait for bed temp
+
+ G28 ; Home all
+ G29 ; Calibration
+
+ M0 Remove probe ; Printer will wait until you remove probe to the printer
+
+ M104 S[nozzle_temperature_initial_layer] T0; Set nozzle temp
+ M109 S[nozzle_temperature_initial_layer] T0; Wait for nozzle temp
  ```
 
 ## Slovak Manual:
@@ -411,30 +417,36 @@
  - 4.) **Po reštarte tlačiarne choď do "Configuration", "Restore Settings" a potom "Store Settings", takto uložíš nové dáta do pamäte EEPROM**
 
 ***4.) Modifikácia GCode:***
- > [!TIP]
- > Používaj G28 X Y a G28 Z zvlášť, namiesto G28 (Viac info [tu](#troubleshooting))
-
- - Príkazy M140, M190, M104 a M109 sa môžu líšiť od sliceru. (Ja používam PrusaSlicer)
-
+ + **PrusaSlicer:**
  ```
- M0 Pripevnit Senzor ; Tlačiareň počká, kým nepripevníš senzor
+ M0 Vlozit senzor ; Printer will wait until you install probe to the printer
 
- G28 X Y ; Home X Y
- G28 Z ; Home Z
+ M140 S[first_layer_bed_temperature] ; Set bed temperature
+ M190 S[first_layer_bed_temperature] ; Wait for bed temperature
 
- M140 S[first_layer_bed_temperature] ; Nastav bed teplotu
- M190 S[first_layer_bed_temperature] ; Počkaj na bed teplotu
+ G28 ; Home all
+ G29 ; Calibration
 
- G29 ; Kalibrácia
+ M0 Odstranit senzor ; Printer will wait until you remove probe from printer
 
- M0 Odstranit Senzor; Tlačiareň počká, kým neodstrániš senzor
+ M104 S[first_layer_temperature] T0; Set nozzle temperature
+ M109 S[first_layer_temperature] T0; Wait for nozzle temperature
  ```
- > [!TIP]
- > Nastav teplotu trysky po kalibrácii.
 
+ + **Orca Slicer:**
  ```
- M104 S[first_layer_temperature] T0; Nastav teplotu trysky
- M109 S[first_layer_temperature] T0; počkaj na teplotu trysky
+ M0 Vlozit senzor ; Printer will wait until you install probe to the printer
+
+ M140 S[hot_plate_temp_initial_layer] ; Set bed temp
+ M190 S[hot_plate_temp_initial_layer] ; Wait for bed temp
+
+ G28 ; Home all
+ G29 ; Calibration
+
+ M0 Odstranit senzor ; Printer will wait until you remove probe to the printer
+
+ M104 S[nozzle_temperature_initial_layer] T0; Set nozzle temp
+ M109 S[nozzle_temperature_initial_layer] T0; Wait for nozzle temp
  ```
 
 ## Nozzle_to_probe_offset:
